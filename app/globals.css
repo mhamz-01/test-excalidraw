@@ -13,12 +13,31 @@
   --color-primary-light: #dcbec9;
 }
 
-/* Move Excalidraw toolbar to bottom ONLY on laptop/desktop */
+
+
+/* For moving toolbar for laptop screen at bottom */
 @media (min-width: 1024px) {
   .excalidraw .Island.App-toolbar {
+    position: fixed !important;
     top: auto !important;
     bottom: 16px !important;
     left: 50% !important;
     transform: translateX(-50%);
+    width: auto !important;
+    z-index: 30;
   }
+}
+
+
+/* hiding zoom in zoom out */
+.excalidraw .Stack.Stack_vertical.zoom-actions {
+  display: none !important;
+}
+
+
+
+/* Hiding library button */
+/* Hide the default Excalidraw sidebar trigger button */
+.excalidraw .sidebar-trigger.default-sidebar-trigger {
+  display: none !important;
 }
