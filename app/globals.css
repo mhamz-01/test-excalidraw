@@ -12,3 +12,13 @@
   --color-primary-darkest: #e86e99;
   --color-primary-light: #dcbec9;
 }
+
+/* Move Excalidraw toolbar to bottom ONLY on laptop/desktop */
+@media (min-width: 1024px) {
+  .excalidraw .Island.App-toolbar {
+    top: auto !important;
+    bottom: 16px !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+}

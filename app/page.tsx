@@ -1,14 +1,9 @@
-'use client';
 
-import "@excalidraw/excalidraw/index.css";
-import Image from "next/image";
-import { Excalidraw } from "@excalidraw/excalidraw";
-
-export default function Home() {
+import WhiteboardShell from "./components/WhiteboardShell";
+export default function Page() {
   return (
-    <div className="h-screen w-screen overflow-hidden bg-[#0b0f14]">
-    <Excalidraw theme="dark" />
-  </div>
-  
+    <div className="h-screen w-screen bg-[#0b0f14]">
+      <WhiteboardShell />
+    </div>
   );
 }
